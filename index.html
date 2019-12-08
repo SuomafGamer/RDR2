@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <title>Red Dead Redemption 2</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Scripts -->
+    <script src="src/collectables.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/listeners.js"></script>
+</head>
+
+<body onload="loaded()">
+
+    <div id="content">
+        <div id="img" style="background-image: url('./images/1.png');"></div>
+        <div id="price">
+            <span>Value $</span>
+            <span id="value">999.99</span>
+        </div>
+
+        <div id="item1" class="item x1 y1" onclick="clickedItem(1)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item2" class="item x2 y1" onclick="clickedItem(2)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item3" class="item x3 y1" onclick="clickedItem(3)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item4" class="item x4 y1" onclick="clickedItem(4)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+
+        <div id="item5" class="item x1 y2" onclick="clickedItem(5)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item6" class="item x2 y2" onclick="clickedItem(6)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item7" class="item x3 y2" onclick="clickedItem(7)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item8" class="item x4 y2" onclick="clickedItem(8)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+
+        <div id="item9" class="item x1 y3" onclick="clickedItem(9)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item10" class="item x2 y3" onclick="clickedItem(10)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item11" class="item x3 y3" onclick="clickedItem(11)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item12" class="item x4 y3" onclick="clickedItem(12)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+
+        <div id="item13" class="item x1 y4" onclick="clickedItem(13)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item14" class="item x2 y4" onclick="clickedItem(14)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+        <div id="item15" class="item x3 y4" onclick="clickedItem(15)">
+            <div class="border border-left"></div>
+            <div class="border border-right"></div>
+            <div class="border border-top"></div>
+            <div class="border border-bottom"></div>
+            <span class="checkmark">✓</span>
+            <span class="name">Name</span>
+        </div>
+    </div>
+
+    <div class="content-part space">
+        <div id="prev">
+            <button onclick="prev()">Previous [Q]</button>
+        </div>
+        <div id="next">
+            <button onclick="next()">Next [E]</button>
+        </div>
+    </div>
+
+    <div class="content-part">
+        <span>Checked</span>
+        <span>Unchecked</span>
+    </div>
+    <div class="content-part">
+        <textarea id="checked" onclick="this.select()" readonly></textarea>
+        <textarea id="unchecked" onclick="this.select()" readonly></textarea>
+    </div>
+
+</body>
+
+</html>

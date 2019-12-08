@@ -1,0 +1,113 @@
+body {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    margin: 0;
+    background-color: #060606;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 25px 0;
+}
+#content {
+    position: relative;
+    width: 992px;
+    height: 747px;
+}
+.content-part {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+}
+.space {
+    margin: 10px 0;
+}
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+#img {
+    position: absolute;
+    width: 992px;
+    height: 747px;
+    z-index: -1;
+}
+
+#price {
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+.item {
+    position: absolute;
+    width: 230px;
+    height: 140px;
+    cursor: pointer;
+}
+.item:hover {
+    background: rgb(181,153,68);
+    background: linear-gradient(-45deg, rgba(181,153,68,0.15) 0%, rgba(216,195,130,0.25) 50%, rgba(122,100,33,0.15) 100%);
+}
+.item:hover .border {
+    display: block;
+}
+
+.border {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(181,153,68);
+    background: linear-gradient(-45deg, rgba(181,153,68,1) 0%, rgba(216,195,130,1) 50%, rgba(122,100,33,1) 100%);
+}
+.border-left {
+    right: unset;
+    width: 3px;
+}
+.border-right {
+    left: unset;
+    width: 3px;
+}
+.border-top {
+    bottom: unset;
+    height: 3px;
+}
+.border-bottom {
+    top: unset;
+    height: 3px;
+}
+
+.y1 { top: 90px; }
+.y2 { top: 255px; }
+.y3 { top: 420px; }
+.y4 { top: 580px; }
+
+.x1 { left: 15px; }
+.x2 { left: 260px; }
+.x3 { left: 505px; }
+.x4 { left: 750px; }
+
+.item .name {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    color: green;
+}
