@@ -141,7 +141,7 @@ var collectableMap = {
         "Thorburn Turquoise Ring",
     ],
     "Alcohol": [
-        "Tennesee Whiskey", // Note - spelling
+        "Tennesee Whiskey", // Note - single s in Tennessee
         "Irish Whiskey",
         "Scotch Whisky", // Note - no e in whiskey
         "Absinthe",
@@ -217,522 +217,194 @@ var collectableMap = {
 // ---------------------------------------
 var collectablePricingMap = {
     // Flowers
-    "Texas Bluebonnet": {
-        value: 999
-    },
-    "Bitterweed": {
-        value: 999
-    },
-    "Agarita": {
-        value: 999
-    },
-    "Wild Rhubarb": {
-        value: 999
-    },
-    "Cardinal FLower": {
-        value: 999
-    },
-    "Creek Plum": {
-        value: 999
-    },
-    "Blood Flower": {
-        value: 999
-    },
-    "Chocolate Daisy": {
-        value: 999
-    },
-    "Wisteria": {
-        value: 999
-    },
+    "Texas Bluebonnet": 8.5,
+    "Bitterweed": 8.5,
+    "Agarita": 10.5,
+    "Wild Rhubarb": 7.25,
+    "Cardinal FLower": 7,
+    "Creek Plum": 10.25,
+    "Blood Flower": 10.25,
+    "Chocolate Daisy": 7.25,
+    "Wisteria": 8.25,
 
     // Tarot Cups
-    "Ace of Cups": {
-        value: 999
-    },
-    "Two of Cups": {
-        value: 999
-    },
-    "Three of Cups": {
-        value: 999
-    },
-    "Four of Cups": {
-        value: 999
-    },
-    "Five of Cups": {
-        value: 999
-    },
-    "Six of Cups": {
-        value: 999
-    },
-    "Seven of Cups": {
-        value: 999
-    },
-    "Eight of Cups": {
-        value: 999
-    },
-    "Nine of Cups": {
-        value: 999
-    },
-    "Ten of Cups": {
-        value: 999
-    },
-    "Page of Cups": {
-        value: 999
-    },
-    "Knight of Cups": {
-        value: 999
-    },
-    "Queen of Cups": {
-        value: 999
-    },
-    "King of Cups": {
-        value: 999
-    },
+    "Ace of Cups": 12,
+    "Two of Cups": 7.75,
+    "Three of Cups": 7.75,
+    "Four of Cups": 7.75,
+    "Five of Cups": 8,
+    "Six of Cups": 8,
+    "Seven of Cups": 7.5,
+    "Eight of Cups": 7.75,
+    "Nine of Cups": 7.75,
+    "Ten of Cups": 7.5,
+    "Page of Cups": 8.5,
+    "Knight of Cups": 9,
+    "Queen of Cups": 10,
+    "King of Cups": 11,
 
     // Tarot Swords
-    "Ace of Swords": {
-        value: 999
-    },
-    "Two of Swords": {
-        value: 999
-    },
-    "Three of Swords": {
-        value: 999
-    },
-    "Four of Swords": {
-        value: 999
-    },
-    "Five of Swords": {
-        value: 999
-    },
-    "Six of Swords": {
-        value: 999
-    },
-    "Seven of Swords": {
-        value: 999
-    },
-    "Eight of Swords": {
-        value: 999
-    },
-    "Nine of Swords": {
-        value: 999
-    },
-    "Ten of Swords": {
-        value: 999
-    },
-    "Page of Swords": {
-        value: 999
-    },
-    "Knight of Swords": {
-        value: 999
-    },
-    "Queen of Swords": {
-        value: 999
-    },
-    "King of Swords": {
-        value: 999
-    },
+    "Ace of Swords": 14.5,
+    "Two of Swords": 9.5,
+    "Three of Swords": 9.25,
+    "Four of Swords": 9.25,
+    "Five of Swords": 9.25,
+    "Six of Swords": 9,
+    "Seven of Swords": 9,
+    "Eight of Swords": 9,
+    "Nine of Swords": 9.25,
+    "Ten of Swords": 9,
+    "Page of Swords": 10,
+    "Knight of Swords": 11,
+    "Queen of Swords": 12,
+    "King of Swords": 13.25,
 
     // Tarot Wands
-    "Ace of Wands": {
-        value: 999
-    },
-    "Two of Wands": {
-        value: 999
-    },
-    "Three of Wands": {
-        value: 999
-    },
-    "Four of Wands": {
-        value: 999
-    },
-    "Five of Wands": {
-        value: 999
-    },
-    "Six of Wands": {
-        value: 999
-    },
-    "Seven of Wands": {
-        value: 999
-    },
-    "Eight of Wands": {
-        value: 999
-    },
-    "Nine of Wands": {
-        value: 999
-    },
-    "Ten of Wands": {
-        value: 999
-    },
-    "Page of Wands": {
-        value: 999
-    },
-    "Knight of Wands": {
-        value: 999
-    },
-    "Queen of Wands": {
-        value: 999
-    },
-    "King of Wands": {
-        value: 999
-    },
+    "Ace of Wands": 12,
+    "Two of Wands": 7.5,
+    "Three of Wands": 7.5,
+    "Four of Wands": 8,
+    "Five of Wands": 7.75,
+    "Six of Wands": 7.25,
+    "Seven of Wands": 7.5,
+    "Eight of Wands": 7.75,
+    "Nine of Wands": 7.75,
+    "Ten of Wands": 8,
+    "Page of Wands": 8.5,
+    "Knight of Wands": 9,
+    "Queen of Wands": 10,
+    "King of Wands": 11,
 
     // Tarot Pentacles
-    "Ace of Pentacles": {
-        value: 999
-    },
-    "Two of Pentacles": {
-        value: 999
-    },
-    "Three of Pentacles": {
-        value: 999
-    },
-    "Four of Pentacles": {
-        value: 999
-    },
-    "Five of Pentacles": {
-        value: 999
-    },
-    "Six of Pentacles": {
-        value: 999
-    },
-    "Seven of Pentacles": {
-        value: 999
-    },
-    "Eight of Pentacles": {
-        value: 999
-    },
-    "Nine of Pentacles": {
-        value: 999
-    },
-    "Ten of Pentacles": {
-        value: 999
-    },
-    "Page of Pentacles": {
-        value: 999
-    },
-    "Knight of Pentacles": {
-        value: 999
-    },
-    "Queen of Pentacles": {
-        value: 999
-    },
-    "King of Pentacles": {
-        value: 999
-    },
+    "Ace of Pentacles": 14.5,
+    "Two of Pentacles": 9,
+    "Three of Pentacles": 9.5,
+    "Four of Pentacles": 9.25,
+    "Five of Pentacles": 9.25,
+    "Six of Pentacles": 9,
+    "Seven of Pentacles": 9,
+    "Eight of Pentacles": 9,
+    "Nine of Pentacles": 9.5,
+    "Ten of Pentacles": 9.25,
+    "Page of Pentacles": 10,
+    "Knight of Pentacles": 11,
+    "Queen of Pentacles": 12,
+    "King of Pentacles": 13.25,
 
     // Braclets
-    "Abello Ruby Bangle Bracelet": {
-        value: 999
-    },
-    "Ojeda Rose Gold Bangle Bracelet": {
-        value: 999
-    },
-    "Helena Sapphire Bracelet": {
-        value: 999
-    },
-    "Durant Pearl Bracelet": {
-        value: 999
-    },
-    "Infanta Turquoise Bracelet": {
-        value: 999
-    },
-    "Elliston Carved Bracelet": {
-        value: 999
-    },
-    "Hajnal Garnet Bangle Bracelet": {
-        value: 999
-    },
-    "Greco Sapphire Bracelet": {
-        value: 999
-    },
+    "Abello Ruby Bangle Bracelet": 17,
+    "Ojeda Rose Gold Bangle Bracelet": 17,
+    "Helena Sapphire Bracelet": 17.75,
+    "Durant Pearl Bracelet": 16.5,
+    "Infanta Turquoise Bracelet": 16.75,
+    "Elliston Carved Bracelet": 16.5,
+    "Hajnal Garnet Bangle Bracelet": 16.25,
+    "Greco Sapphire Bracelet": 18,
 
     // Earrings
-    "Ursula Citrine Earrings": {
-        value: 999
-    },
-    "Royal Victoria Diamond Earrings": {
-        value: 999
-    },
-    "Calumet Turquoise Earrings": {
-        value: 999
-    },
-    "Orchidee Diamond Earrings": {
-        value: 999
-    },
-    "Sterling Tooth Earrings": {
-        value: 999
-    },
-    "Harford Garnet Earrings": {
-        value: 999
-    },
-    "Duchess Emerald Earrings": {
-        value: 999
-    },
-    "Beauchene Ruby Earrings": { // Note - no fancy e
-        value: 999
-    },
-    "Endicott Diamond Earrings": {
-        value: 999
-    },
-    "Josephine Pearl Earrings": {
-        value: 999
-    },
-    "Emmeline Coral Earrings": {
-        value: 999
-    },
+    "Ursula Citrine Earrings": 15.5,
+    "Royal Victoria Diamond Earrings": 17.25,
+    "Calumet Turquoise Earrings": 15.75,
+    "Orchidee Diamond Earrings": 18.5,
+    "Sterling Tooth Earrings": 15.5,
+    "Harford Garnet Earrings": 16,
+    "Duchess Emerald Earrings": 15.75,
+    "Beauchene Ruby Earrings": 16.5,
+    "Endicott Diamond Earrings": 19.25,
+    "Josephine Pearl Earrings": 16,
+    "Emmeline Coral Earrings": 16.25,
 
     // Necklaces
-    "Blakely Miniature Necklace": {
-        value: 999
-    },
-    "Richelieu Amethyst Necklace": {
-        value: 999
-    },
-    "Pelle Pearl Necklace": {
-        value: 999
-    },
-    "Ainsworth Cross Necklace": {
-        value: 999
-    },
-    "Braxton Amethyst Necklace": {
-        value: 999
-    },
-    "Rou Pearl Necklace": {
-        value: 999
-    },
-    "Gosselin White Gold Necklace": {
-        value: 999
-    },
-    "Dane Topaz Necklace": {
-        value: 999
-    },
-    "Tuamotu Pearl Necklace": {
-        value: 999
-    },
+    "Blakely Miniature Necklace": 18.75,
+    "Richelieu Amethyst Necklace": 17.75,
+    "Pelle Pearl Necklace": 18.25,
+    "Ainsworth Cross Necklace": 17.25,
+    "Braxton Amethyst Necklace": 18,
+    "Rou Pearl Necklace": 18.5,
+    "Gosselin White Gold Necklace": 19.5,
+    "Dane Topaz Necklace": 18.75,
+    "Tuamotu Pearl Necklace": 20.75,
 
     // Rings
-    "Harland Coral Ring": {
-        value: 999
-    },
-    "Magnate Turquoise Ring": {
-        value: 999
-    },
-    "Pilgrim Moonstone Ring": {
-        value: 999
-    },
-    "Bonnard Pearl Ring": {
-        value: 999
-    },
-    "Banais Topaz Ring": {
-        value: 999
-    },
-    "Beaulieux Diamond Ring": {
-        value: 999
-    },
-    "Yates Diamond Ring": {
-        value: 999
-    },
-    "Aubrey Onyx Ring": {
-        value: 999
-    },
-    "Bosque Emerald Ring": {
-        value: 999
-    },
-    "Sackville Diamond Ring": {
-        value: 999
-    },
-    "Thorburn Turquoise Ring": {
-        value: 999
-    },
+    "Harland Coral Ring": 16.75,
+    "Magnate Turquoise Ring": 16.5,
+    "Pilgrim Moonstone Ring": 16.75,
+    "Bonnard Pearl Ring": 16.75,
+    "Banais Topaz Ring": 17,
+    "Beaulieux Diamond Ring": 18.5,
+    "Yates Diamond Ring": 17.75,
+    "Aubrey Onyx Ring": 16.5,
+    "Bosque Emerald Ring": 16.5,
+    "Sackville Diamond Ring": 19.25,
+    "Thorburn Turquoise Ring": 16.75,
 
     // Alcohol
-    "Tennesee Whiskey": { // Note - spelling
-        value: 999
-    },
-    "Irish Whiskey": {
-        value: 999
-    },
-    "Scotch Whisky": { // Note - no e in whiskey
-        value: 999
-    },
-    "Absinthe": {
-        value: 999
-    },
-    "Gran Corazon Madeira": {
-        value: 999
-    },
-    "Old Tom Gin": {
-        value: 999
-    },
-    "Caribbean Rum": {
-        value: 999
-    },
-    "Cognac": {
-        value: 999
-    },
-    "London Dry Gin": {
-        value: 999
-    },
+    "Tennesee Whiskey": 7.25,
+    "Irish Whiskey": 10.25,
+    "Scotch Whisky": 10.5,
+    "Absinthe": 9,
+    "Gran Corazon Madeira": 9,
+    "Old Tom Gin": 10.5,
+    "Caribbean Rum": 7.75,
+    "Cognac": 8.75,
+    "London Dry Gin": 7.25,
 
     // Eggs
-    "Spoonbill Egg": {
-        value: 999
-    },
-    "Heron Egg": {
-        value: 999
-    },
-    "Loon Egg": {
-        value: 999
-    },
-    "Eagle Egg": {
-        value: 999
-    },
-    "Vulture Egg": {
-        value: 999
-    },
-    "Hawk Egg": {
-        value: 999
-    },
-    "Egret Egg": {
-        value: 999
-    },
-    "Duck Egg": {
-        value: 999
-    },
-    "Goose Egg": {
-        value: 999
-    },
+    "Spoonbill Egg": 0,
+    "Heron Egg": 0,
+    "Loon Egg": 0,
+    "Eagle Egg": 0,
+    "Vulture Egg": 0,
+    "Hawk Egg": 0,
+    "Egret Egg": 0,
+    "Duck Egg": 2.25,
+    "Goose Egg": 3,
 
     // Arrowheads
-    "Rough Arrowhead": {
-        value: 999
-    },
-    "Splintered Arrowhead": {
-        value: 999
-    },
-    "Crude Arrowhead": {
-        value: 999
-    },
-    "Chipped Arrowhead": {
-        value: 999
-    },
-    "Feldspar Arrowhead": {
-        value: 999
-    },
-    "Slate Arrowhead": {
-        value: 999
-    },
-    "Bone Arrowhead": {
-        value: 999
-    },
-    "Raw Arrowhead": {
-        value: 999
-    },
-    "Obsidian Arrowhead": {
-        value: 999
-    },
-    "Quartz Arrowhead": {
-        value: 999
-    },
-    "Flint Arrowhead": {
-        value: 999
-    },
-    "Agate Arrowhead": {
-        value: 999
-    },
+    "Rough Arrowhead": 11.75,
+    "Splintered Arrowhead": 8.75,
+    "Crude Arrowhead": 9.5,
+    "Chipped Arrowhead": 8.25,
+    "Feldspar Arrowhead": 13,
+    "Slate Arrowhead": 12,
+    "Bone Arrowhead": 12.5,
+    "Raw Arrowhead": 9,
+    "Obsidian Arrowhead": 17,
+    "Quartz Arrowhead": 16.25,
+    "Flint Arrowhead": 11.25,
+    "Agate Arrowhead": 15.25,
 
     // Heirlooms
-    "Jade Hairpin": {
-        value: 999
-    },
-    "Cherrywood Comb": {
-        value: 999
-    },
-    "Ebony Hairbrush": {
-        value: 999
-    },
-    "Metal Hairpin": {
-        value: 999
-    },
-    "Carved Wooden Hairpin": {
-        value: 999
-    },
-    "Boxwood Comb": {
-        value: 999
-    },
-    "Goat Hair Brush": {
-        value: 999
-    },
-    "Ebony Hairpin": {
-        value: 999
-    },
-    "Ivory Hairpin": {
-        value: 999
-    },
-    "Rosewood Hairbrush": {
-        value: 999
-    },
-    "Tortoiseshell Comb": {
-        value: 999
-    },
-    "Ivory Comb": {
-        value: 999
-    },
-    "Horse Hair Brush": {
-        value: 999
-    },
-    "Boar Bristle Brush": {
-        value: 999
-    },
-    "New Guinea Rosewood Hairbrush": {
-        value: 999
-    },
+    "Jade Hairpin": 11.75,
+    "Cherrywood Comb": 8.75,
+    "Ebony Hairbrush": 9,
+    "Metal Hairpin": 10.5,
+    "Carved Wooden Hairpin": 10,
+    "Boxwood Comb": 8.75,
+    "Goat Hair Brush": 8.5,
+    "Ebony Hairpin": 12.25,
+    "Ivory Hairpin": 13,
+    "Rosewood Hairbrush": 8,
+    "Tortoiseshell Comb": 8.25,
+    "Ivory Comb": 9.75,
+    "Horse Hair Brush": 9.25,
+    "Boar Bristle Brush": 9,
+    "New Guinea Rosewood Hairbrush": 9.5,
 
     // Coins
-    "1800 Gold Quarter": {
-        value: 999
-    },
-    "1798 Draped Bust Silver Dollar": {
-        value: 999
-    },
-    "1787 One Cent Token": {
-        value: 999
-    },
-    "1794 Silver Dollar": {
-        value: 999
-    },
-    "1700 New Yorke Token": {
-        value: 999
-    },
-    "1800 Five Dollar Bechtler": {
-        value: 999
-    },
-    "1792 Quarter": {
-        value: 999
-    },
-    "1800 Gold Dollar": {
-        value: 999
-    },
-    "1792 Nickel": {
-        value: 999
-    },
-    "1796 Halfpenny": {
-        value: 999
-    },
-    "1795 Half Eagle": {
-        value: 999
-    },
-    "1797 Gold Eagle": {
-        value: 999
-    },
-    "1792 Liberty Quarter": {
-        value: 999
-    },
-    "1800 Half Dime": {
-        value: 999
-    },
-    "1789 Penny": {
-        value: 999
-    },
+    "1800 Gold Quarter": 21,
+    "1798 Draped Bust Silver Dollar": 18.25,
+    "1787 One Cent Token": 18,
+    "1794 Silver Dollar": 19,
+    "1700 New Yorke Token": 20.25,
+    "1800 Five Dollar Bechtler": 17.75,
+    "1792 Quarter": 14.5,
+    "1800 Gold Dollar": 22,
+    "1792 Nickel": 14.25,
+    "1796 Halfpenny": 14.75,
+    "1795 Half Eagle": 15,
+    "1797 Gold Eagle": 21.25,
+    "1792 Liberty Quarter": 20.75,
+    "1800 Half Dime": 18.5,
+    "1789 Penny": 14.75,
 }
