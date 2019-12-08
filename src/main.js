@@ -8,6 +8,10 @@ var itemChecklist = {};
 var checkedEl;
 var uncheckedEl;
 
+function jumpTo(number) {
+    currentCollectable = number;
+    getCollectable();
+}
 function getCollectable(inc) {
     // Increment the collectable page
     currentCollectable += inc || 0;
@@ -72,6 +76,13 @@ function getCollectable(inc) {
             uncheckedEl.value += itemName + ";";
         }
     }
+    var totalSelectedCount = 0;
+    for (var x in itemChecklist) {
+        if (itemChecklist[x]) {
+            totalSelectedCount++;
+        }
+    }
+    document.querySelector("#totalSelectedCount").innerText = totalSelectedCount;
 }
 
 function clickedItem(num) {
@@ -109,19 +120,40 @@ function loaded() {
     uncheckedEl = document.querySelector("#unchecked");
 
     var listArea = document.querySelector("#left");
+    var totalCost = 0;
+    var totalItems = 0;
 
     // Initialize the full item list/checklist
     for (var i = 0; i < collectables.length; i++) {
         var _c = collectables[i];
         var _cList = collectableMap[_c.name];
 
-        // Create element
-        var group = document.createElement("div");
+        // Total
+        totalCost += _c.value;
+        totalItems += _cList.length;
+
+        // Create Grouping Elements
+        var group = document.createElement("label");
+        group.setAttribute("onclick", `jumpTo(${i + 1})`);
         group.className = "group";
         group.id = "collectionGroup" + i;
+
+        // Group Name / Checkbox Container
+        var gcContainer = document.createElement("div");
+        // Group Name
         var title = document.createElement("span");
         title.innerText = _c.name;
+        // Checkbox
+        var check = document.createElement("input");
+        check.hidden = "true";
+        check.type = "checkbox";
 
+        // Value / Count Container
+        var vcContainer = document.createElement("div");
+        // Value
+        var value = document.createElement("span");
+        value.innerText = "$ " + Number(_c.value).toFixed(2);
+        // Count
         var count = document.createElement("span");
         count.className = "group-count";
         var tmp1 = document.createElement("span");
@@ -135,8 +167,14 @@ function loaded() {
         count.appendChild(tmp2);
         count.appendChild(tmp3);
 
-        group.appendChild(title);
-        group.appendChild(count);
+        group.appendChild(gcContainer);
+        gcContainer.appendChild(title);
+        gcContainer.appendChild(check);
+
+        group.appendChild(vcContainer);
+        vcContainer.appendChild(value);
+        vcContainer.appendChild(count);
+
         listArea.appendChild(group);
 
         // Iterate over each collections items
@@ -146,6 +184,45 @@ function loaded() {
             itemChecklist[_item] = false;
         }
     }
+
+
+    // Create Grouping Elements
+    var group = document.createElement("label");
+    group.className = "group total";
+    group.id = "collectionGroup" + i;
+
+    // Group Name / Checkbox Container
+    var title = document.createElement("div");
+    title.innerText = "Total";
+    // Value
+    var value = document.createElement("div");
+    value.innerText = "$ " + Number(totalCost).toFixed(2);
+    // Count
+    var count = document.createElement("div");
+    var tmp1 = document.createElement("span");
+    tmp1.innerText = "[";
+    var tmp2 = document.createElement("span");
+    tmp2.id = "totalSelectedCount";
+    tmp2.innerText = "0";
+    var tmp3 = document.createElement("span");
+    tmp3.innerText = "/";
+    var tmp4 = document.createElement("span");
+    tmp4.id = "totalSelectedMax";
+    tmp4.innerText = totalItems;
+    var tmp5 = document.createElement("span");
+    tmp5.innerText = "]";
+    count.appendChild(tmp1);
+    count.appendChild(tmp2);
+    count.appendChild(tmp3);
+    count.appendChild(tmp4);
+    count.appendChild(tmp5);
+
+    group.appendChild(title);
+    group.appendChild(value);
+    group.appendChild(count);
+    listArea.appendChild(group);
+
+
     // Init the collectables
     getCollectable();
 }

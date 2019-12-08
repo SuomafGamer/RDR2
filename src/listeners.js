@@ -26,15 +26,15 @@ window.addEventListener("keydown", function (event) {
 
     // [A]
     if (event.keyCode == 65) {
-        selectAll();
+        // selectAll();
     }
     // [S]
     if (event.keyCode == 83) {
-        selectInverse();
+        // selectInverse();
     }
     // [D]
     if (event.keyCode == 68) {
-        selectNone();
+        // selectNone();
     }
 });
 
