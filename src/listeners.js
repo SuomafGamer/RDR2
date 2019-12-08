@@ -1,7 +1,7 @@
 // Key Down
 window.keyDownMap = {};
 window.addEventListener("keydown", function (event) {
-    // console.log(event.keyCode);
+    console.log(event.keyCode);
 
     // MODIFIERS
     if (event.keyCode == 16) {
@@ -22,6 +22,19 @@ window.addEventListener("keydown", function (event) {
     // [E]
     if (event.keyCode == 69) {
         next();
+    }
+
+    // [A]
+    if (event.keyCode == 65) {
+        selectAll();
+    }
+    // [S]
+    if (event.keyCode == 83) {
+        selectInverse();
+    }
+    // [D]
+    if (event.keyCode == 68) {
+        selectNone();
     }
 });
 
