@@ -350,13 +350,13 @@ var collectablePricingMap = {
     "London Dry Gin": 7.25,
 
     // Eggs
-    "Spoonbill Egg": 0,
-    "Heron Egg": 0,
-    "Loon Egg": 0,
-    "Eagle Egg": 0,
-    "Vulture Egg": 0,
-    "Hawk Egg": 0,
-    "Egret Egg": 0,
+    "Spoonbill Egg": 12.75,
+    "Heron Egg": 12.75,
+    "Loon Egg": 3.5,
+    "Eagle Egg": 14.75,
+    "Vulture Egg": 15,
+    "Hawk Egg": 14.75,
+    "Egret Egg": 12.5,
     "Duck Egg": 2.25,
     "Goose Egg": 3,
 
